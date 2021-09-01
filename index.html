@@ -26,7 +26,7 @@
 
   <style>
     .container {
-      max-width: 600px;
+      max-width: 1400px;
     }
 
     section.header {
@@ -78,109 +78,122 @@
   <div class="container">
 
     <section class="header">
-      <h2>Unpuzzle Dataset Bias</h2>
-      
+      <h1><b>Unpuzzle Dataset Bias</b></h1>
+
+      <h4>Nikita Jaipuria<sup>*</sup>, Katherine Stevo<sup>&dagger;</sup>, Xianling Zhang<sup>*</sup>, Meghana L. Gaopande<sup>*</sup>, Jinesh Jain<sup>*</sup>, Vidya N. Murali<sup>*</sup></h4>
+      <h5><sup>*</sup>Ford Greenfield Labs, Palo Alto    <sup>&dagger;</sup>Georgia Institute of Technology</h5>
       <p style="font-size:20px"><b>Abstract</b></p>
-      
-      <p style="text-align:left">Dataset bias in manually collected datasets is a known problem in computer vision. Models trained on such datasets tend to underperform in the field. This effect is particularly amplified in automotive applications where data is hard to come by. Furthermore, in a safety-critical environment, these biases can lead to catastrophic errors jeopardizing the safety of users and their surroundings. Being able to unpuzzle the bias in a given dataset, and across datasets, is a powerful and essential tool towards building responsible AI. In this paper, we present <b>deepPIC: deep P</b>erceptual <b>I</b>mage <b>C</b>lustering, a novel data-centric hierarchical clustering pipeline that leverages deep perceptual features to visualize and understand bias in unstructured and unlabeled datasets. It does so by effectively highlighting nuanced subcategories of information embedded within the data (such as multiple but repetitive shadow types in a daytime dataset) that typically is hard and/or expensive to capture. Through experiments on a variety of image datasets, both open-source and internal to Ford, we demonstrate the effectiveness of deepPIC in singling out errors in metadata provided by open-source datasets such as BDD100K; automatic nuanced metadata annotation; mining for edge cases; visualizing inherent bias both within and across multiple automated driving datasets; and capturing synthetic data limitations; thus highlighting the wide variety of applications this pipeline can be applied to. All the data clustering results included in this paper have been uploaded on our project website - https://alchemz.github.io/unpuzzle_dataset_bias/. We recommend zooming in for the best impact.</p>
+
+      <p style="text-align:left">Dataset bias in manually collected datasets is a known problem in computer vision. Models trained on such datasets tend to underperform in the field. This effect is particularly amplified in automotive applications where data is hard to come by. Furthermore, in a safety-critical environment, these biases can lead to catastrophic errors jeopardizing the safety of users and their surroundings. Being able to unpuzzle the bias in a given dataset, and across datasets, is a powerful and essential tool towards building responsible AI. In this paper, we present <b>deepPIC: deep P</b>erceptual <b>I</b>mage <b>C</b>lustering, a novel data-centric hierarchical clustering pipeline that leverages deep perceptual features to visualize and understand bias in unstructured and unlabeled datasets. It does so by effectively highlighting nuanced subcategories of information embedded within the data (such as multiple but repetitive shadow types in a daytime dataset) that typically is hard and/or expensive to capture. Through experiments on a variety of image datasets, both open-source and internal to Ford, we demonstrate the effectiveness of deepPIC in singling out errors in metadata provided by open-source datasets such as BDD100K; automatic nuanced metadata annotation; mining for edge cases; visualizing inherent bias both within and across multiple automated driving datasets; and capturing synthetic data limitations; thus highlighting the wide variety of applications this pipeline can be applied to.
+
+      <p style="text-align:left"> All the data clustering results included in the paper "Unpuzzle Dataset Bias" have been uploaded here. <b>We recommend zooming in using a touch pad for the best impact.</b>
+      For desktop users without touch pad, this zoom feature will not be supported.</p>
+      <br>
+
+      <h3>Figure 2: Schematic of the hierarchical clustering pipeline, deepPIC</h3>
+
+      <div class="value-img">
+        <img id="img-default" src="assets/img/PipelineWithImages.pdf" data-action="zoom" data-original="assets/img/PipelineWithImages.pdf"
+          alt="journey_start_thumbnail" width="1000"/>
+      </div>
 
       <br>
-      
-      <h2>Figure 3: 3 DBSCAN Clusters From Stage 1</h2>
-      
+
+      <h3>Figure 3: 3 DBSCAN Clusters From Stage 1</h3>
+
       <div class="value-img">
         <img id="img-default" src="assets/img/Step2_DBSCAN_visualization.png" data-action="zoom" data-original="assets/img/Step2_DBSCAN_visualization.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
-      <p>C<sup>1</sup>, i.e. stage 1 output from deepPIC applied to 5000 images randomly sampled from the BDD100K training set.</p>      
-      
+
+      <p>C<sup>1</sup>  i.e. stage 1 output from deepPIC applied to 5000 images randomly sampled from the BDD100K training set. </p>
+
       <br>
-      
-      <h2>Figure 4: Stage 2 Clustering Output: C<sup>2</sup><sub>1</sub></h2>
-      
+
+      <h3>Figure 4: Stage 2 Clustering Output: C<sup>2</sup><sub>1</sub></h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_just_visualization_1.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_just_visualization_1.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>C<sup>2</sup><sub>1</sub>, i.e. stage 2 output from deepPIC applied to BDD100K images assigned to C<sup>1</sup><sub>1</sub> in Fig. 3.</p>
-      
+
       <br>
-      
-      <h2>Figure 6: 12 DBSCAN Clusters from Stage 1</h2>
-      
+
+      <h3>Figure 6: 12 DBSCAN Clusters from Stage 1</h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step2_VGG_visualization.png" data-action="zoom" data-original="assets/img/Step2_VGG_visualization.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>C<sup>1</sup>, i.e. stage 1 output of deepPIC applied to 5000 images randomly sampled from the chair and cone object detection dataset.</p>
-      
+
       <br>
-      
-      <h2>Figure 7: 3 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>5</sub></h2>
-      
+
+      <h3>Figure 7: 3 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>5</sub></h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_distinct (1).png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_distinct (1).png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>C<sup>2</sup><sub>5</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>5</sub></p>
-      
+
       <br>
-      
-      <h2>Figure 7: 2 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>2</sub></h2>
-      
+
+      <h3>Figure 7: 2 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>2</sub></h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_evolution.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_evolution.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>C<sup>2</sup><sub>2</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>2</sub></p>
-      
+
       <br>
-      
-      <h2>Figure 7: 4 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>6</sub></h2>
-      
+
+      <h3>Figure 7: 4 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>6</sub></h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>C<sup>2</sup><sub>6</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>6</sub></p>
-      
+
       <br>
-      
-      <h2>Figure 8: 5 DBSCAN Clusters With Labels</h2>
-      
+
+      <h3>Figure 8: 5 DBSCAN Clusters With Labels</h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step2_DBSCAN_5_VGG_cluster_visualization.png" data-action="zoom" data-original="assets/img/Step2_DBSCAN_5_VGG_cluster_visualization.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>Visualizing inherent dataset bias in open-source lane detection datasets. Stage 1 clustering output from deepPIC applied to 10000 images from 5 different datasets.</p>
-      
+
       <br>
-      
-      <h2>Figure 9: 6 DBSCAN Clusters From Stage 1</h2>
-      
+
+      <h3>Figure 9: 6 DBSCAN Clusters From Stage 1</h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Sim2Real_Image.png" data-action="zoom" data-original="assets/img/Sim2Real_Image.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>Visualizing sim-to-real gap in merged datasets. C<sup>1</sup>, i.e. stage 1 output from deepPIC applied to a mix of 3000 real, simulated and sim-to-real GAN translated parking images.</p>
-      
+
       <br>
-      
-      <h2>Figure 11: Stage 2 Clustering Output</h2>
-      
+
+      <h3>Figure 11: Stage 2 Clustering Output</h3>
+
       <div class="value-img2">
         <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_just_visualization_0.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_just_visualization_0.png"
-          alt="journey_start_thumbnail" />
+          alt="journey_start_thumbnail" width="1000"/>
       </div>
-      
+
       <p>C<sup>2</sup><sub>0</sub>, i.e. the stage 2 clustering output from deepPIC applied to the BDD100K images assigned to C<sup>1</sup><sub>0</sub> in Fig. 3.</p>
 
     </section>
@@ -194,13 +207,13 @@
         <li>Zoom into a hi-res image if supplied.</li>
         <li>Easy to integrate &amp; customizable.</li>
       </ul> -->
-<!-- 
+<!--
       <div class="value-img">
         <a href="assets/img/journey.jpg">
           <img id="img-custom" src="assets/img/journey_thumbnail.jpg" alt="journey_thumbnail" />
         </a>
       </div> -->
-<!-- 
+<!--
       <p>
         <small>Options below were designed to affect the second image only.</small>
       </p>
@@ -220,7 +233,7 @@
       </p>
 
       <br>
-      
+
       <a class="button" href="https://github.com/kingdido999/zooming">GitHub</a>
       <a class="button button-primary" href="http://kingdido999.github.io/zooming/docs">Get Started</a>
     </section>
@@ -229,16 +242,13 @@
   </div>
 
   <hr>
-<!-- 
-  <footer>
-    <p id="copyright"></p>
-    <p id="license">
-      <a href="https://opensource.org/licenses/MIT">The MIT License</a>
-    </p>
-  </footer> -->
 
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer>
+    <p>Created using <a href="https://github.com/kingdido999/zooming">Zooming</a></p>
+  </footer>
+
+
+
   <script src="build/zooming.js"></script>
   <script>
     const defaultZooming = new Zooming()
