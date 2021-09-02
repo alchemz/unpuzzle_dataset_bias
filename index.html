@@ -210,7 +210,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Figure 7: 3 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>5</sub>. C<sup>2</sup><sub>5</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>5</sub>
+              Figure 7(Left): 3 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>5</sub>. C<sup>2</sup><sub>5</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>5</sub>
             </p>
             <div class="value-img2">
               <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_distinct.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_distinct.png"
@@ -233,7 +233,7 @@
         <div class="content">
           <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>2</sub></h2>
           <p>
-            Figure 7: 2 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>2</sub>,  i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>2</sub>.
+            Figure 7(Center): 2 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>2</sub>,  i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>2</sub>.
           </p>
           <div class="value-img">
           <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_evolution.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_evolution.png"
@@ -247,7 +247,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              Figure 7: 4 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>6</sub>. i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>6</sub>.
+              Figure 7(Right): 4 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>6</sub>. i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>6</sub>.
             </p>
             <div class="value-img2">
               <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png"
@@ -338,8 +338,8 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-4">Stage 2 Parking Clustering Output for C<sup>1</sup><sub>1</sub></h2>
-          <p>
-              Figure 13: Stage 2 output for the biggest stage 1 cluster i.e. C<sup>1</sup>, highlighted in green in Fig. 12. Images that got clustered in C<sup>1</sup><sub>1</sub> are from similar outdoor parking environments in a sunny or cloudy lighting condition. Note how the sub-clusters labeled 0, 1, 2 and 3 have formed one neighbourhood because of images in these sub-clusters sharing similar features such as clear weather and no prominent ego-vehicle shadows. The sub-cluster labeled 4 comprises of images captured in cloudy weather conditions. The remaining sub-clusters labeled 5, 6, 7 and 8 have been separated from the rest, due to the strong ego-vehicle shadow cast on the ground
+            <p>
+              Figure 13: Note how the sub-clusters labeled 0, 1, 2 and 3 have formed one neighbourhood because of images in these sub-clusters sharing similar features such as clear weather and no prominent ego-vehicle shadows. The sub-cluster labeled 4 comprises of images captured in cloudy weather conditions. The remaining sub-clusters labeled 5, 6, 7 and 8 have been separated from the rest, due to the strong ego-vehicle shadow cast on the ground
             </p>
             <div class="value-img2">
               <img id="img-default" src="assets/img/parking2k_stage2_group1_cluster_a.png" data-action="zoom" data-original="assets/img/parking2k_stage2_group1_cluster_a.png"
@@ -347,6 +347,39 @@
             </div>
         </div>
       </div>
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-4">Stage 1 Parking Clustering 1K Sample Output with KMeans</h2>
+            <p>
+              Figure 20(Right): Based on the highest silhouette score, selected k=3.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/img/parking1k_kmeans_stage1_cluster.png" data-action="zoom" data-original="assets/img/parking1k_kmeans_stage1_cluster.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!-- Output. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-4">Stage 1 Parking Clustering 1K Sample Output with DBSCAN</h2>
+            <p>
+              Figure 21: Comparatively, using DBSCAN, the pipeline automatically formed 7 clusters from the same parking 1k sample set in stage 1.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/img/parking1k_dbscan_stage1_cluster.png" data-action="zoom" data-original="assets/img/parking1k_dbscan_stage1_cluster.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+
 </section>
 
 <footer class="footer">
