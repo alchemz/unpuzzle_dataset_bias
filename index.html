@@ -148,13 +148,19 @@
 </section>
 
 
+
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4"> BDD100K DeepPIC Results</h2>
+      </div>
+    </div>
     <div class="columns is-centered">
     <!-- Stage 1 BDD100K Clustering Output. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 1 BDD100K Clustering Output</h2>
+          <!-- <h2 class="title is-4">Stage 1</h2> -->
           <p>
             Figure 3: 3 DBSCAN Clusters From Stage 1. C<sup>1</sup>  i.e. stage 1 output from deepPIC applied to 5000 images randomly sampled from the BDD100K training set. 
           </p>
@@ -165,11 +171,17 @@
         </div>
       </div>
       <!--/ Stage 1 Clustering  BDD100K Output. -->
-      <!-- Stage 2 BDD100K Clustering Output. -->
+  </div>
+</section>
+
+<!-- Output. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- 1. -->
       <div class="column">
-        <h2 class="title is-4">Stage 2 BDD100K Clustering Output for C<sup>2</sup><sub>1</sub></h2>
-        <div class="columns is-centered">
-          <div class="column content">
+        <div class="content">
+          <!-- <h2 class="title is-4">Stage 2 BDD100K Clustering Output for C<sup>2</sup><sub>1</sub></h2> -->
             <p>
               Figure 4: Stage 2 Clustering Output: C<sup>2</sup><sub>1</sub>. C<sup>2</sup><sub>1</sub>, i.e. stage 2 output from deepPIC applied to BDD100K images assigned to C<sup>1</sup><sub>1</sub> in Fig. 3.
             </p>
@@ -177,22 +189,125 @@
               <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_just_visualization_1.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_just_visualization_1.png"
                 alt="journey_start_thumbnail" width="1000"/>
             </div>
-          </div>
-
         </div>
       </div>
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Stage 2 BDD100K Clustering Output for C<sup>2</sup><sub>0</sub></h2> -->
+            <p>
+              Figure 11: Stage 2 Clustering Output. C<sup>2</sup><sub>0</sub>, i.e. the stage 2 clustering output from deepPIC applied to the BDD100K images assigned to C<sup>1</sup><sub>0</sub> in Fig. 3.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_just_visualization_0.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_just_visualization_0.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+</section>
+
+<!-- BDD100K without Deep Perceptual Feature Understanding -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5"> Without Deep Perceptual Feature Understanding BDD100K Stage 1 Results</h2>
+      </div>
     </div>
-    <!--/ Stage 2 Clustering  BDD100K Output. -->
-  </div>
+    <div class="columns is-centered">
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 BDD100K Dataset tSNE + DBSCAN: 2 DBSCAN Clusters With Label</h2> -->
+            <p>
+              Figure 22: tSNE + DBSCAN: 2 DBSCAN Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/tsne_dbscan.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/tsne_dbscan.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+       <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 BDD100K Dataset tSNE + KMeans: 2 KMeans Clusters With Label</h2> -->
+            <p>
+              Figure 23: tSNE + KMeans: 2 KMeans Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/tsne_kmeans.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/tsne_kmeans.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 BDD100K Dataset 2 DBSCAN Clusters With Label </h2> -->
+            <p>
+              Figure 24: BDD100K Dataset 2 DBSCAN Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/dbscan.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/dbscan.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 BDD100K Dataset 2 KMeans Clusters With Label</h2> -->
+            <p>
+              Figure 25: BDD100K Dataset 2 KMeans Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/kmeans.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/kmeans.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 BDD100K Dataset 3 DBSCAN Clusters With Label</h2> -->
+            <p>
+              Figure 26: Night 3 DBSCAN Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/dbscan_night.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/dbscan_night.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 BDD100K Dataset 3 KMeans Clusters With Label</h2> -->
+            <p>
+              Figure 27: Night 3 KMeans Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/kmeans_night.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/kmeans_night.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. -->
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5"> Chair and Cone Datasets DeepPIC Results</h2>
+      </div>
+    </div>
     <div class="columns is-centered">
- <!-- Stage 1 Chair and Cone Clustering Output. -->
+    <!-- Stage 1 Chair and Cone Clustering Output. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 1 Chair and Cone Clustering Output</h2>
+          <!-- <h2 class="title is-4">Stage 1 Chair and Cone Clustering Output</h2> -->
           <p>
             Figure 6: 12 DBSCAN Clusters from Stage 1. C<sup>1</sup>  C<sup>1</sup>, i.e. stage 1 output of deepPIC applied to 5000 images randomly sampled from the chair and cone object detection dataset.
           </p>
@@ -203,74 +318,72 @@
         </div>
       </div>
       <!--/ Stage 1 Chair and Cone Clustering Output. -->
-
-      <!-- Stage 2 Chair and Cone Clustering Output. -->
-      <div class="column">
-        <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>5</sub></h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              Figure 7(Left): 3 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>5</sub>. C<sup>2</sup><sub>5</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>5</sub>
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_distinct.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_distinct.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/Stage 2 Chair and Cone Clustering Output. -->
   </div>
 </section>
 
-<!-- Stage 1 Chair and Cone Clustering Output. -->
+<!-- Stage 2 Chair and Cone Clustering Output. -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-
+      <!-- 1. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>2</sub></h2>
+          <!-- <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>5</sub></h2> -->
+           <p>
+            Figure 7(Left): 3 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>5</sub>. C<sup>2</sup><sub>5</sub>, i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>5</sub>
+          </p>
+          <div class="value-img2">
+              <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_distinct.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_distinct.png"
+                alt="journey_start_thumbnail" width="1000"/>
+          </div>
+        </div>
+      </div>
+      <!-- 1. -->
+
+      <!--/Stage 2 Chair and Cone Clustering Output. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>2</sub></h2> -->
           <p>
             Figure 7(Center): 2 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>2</sub>,  i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>2</sub>.
           </p>
           <div class="value-img">
-          <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_evolution.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_evolution.png"
-            alt="journey_start_thumbnail" width="1000"/>
-        </div>
+            <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_evolution.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_evolution.png"
+              alt="journey_start_thumbnail" width="1000"/>
+          </div>
         </div>
       </div>
 
       <div class="column">
-        <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>6</sub></h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              Figure 7(Right): 4 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>6</sub>. i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>6</sub>.
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
+        <div class="content">
+          <!-- <h2 class="title is-4">Stage 2 Chair and Cone Clustering Output For C<sup>1</sup><sub>6</sub></h2> -->
+          <p>
+            Figure 7(Right): 4 DBSCAN Clusters From Stage 2 For C<sup>1</sup><sub>6</sub>. i.e. stage 2 output from deepPIC applied to the subset of images clustered in C<sup>1</sup><sub>6</sub>.
+          </p>
+          <div class="value-img2">
+            <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_no_distinction.png"
+              alt="journey_start_thumbnail" width="1000"/>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 <!--/Stage 2 -->
 
 <!-- Lane Output. -->
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5"> Lane Datasets DeepPIC Results</h2>
+      </div>
+    </div>
     <div class="columns is-centered">
- <!-- Stage 1. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 1 Lane Dataset Output</h2>
+          <!-- <h2 class="title is-4">Stage 1 Lane Dataset Output</h2> -->
           <p>
-            Figure 8: 5 DBSCAN Clusters With Labels. C<sup>1</sup>  Visualizing inherent dataset bias in open-source lane detection datasets. Stage 1 clustering output from deepPIC applied to 10000 images from 5 different datasets..
+            Figure 8: Stage 1, 5 DBSCAN Clusters With Labels. C<sup>1</sup>  Visualizing inherent dataset bias in open-source lane detection datasets. Stage 1 clustering output from deepPIC applied to 10000 images from 5 different datasets..
           </p>
           <div class="value-img">
           <img id="img-default" src="assets/img/Step2_DBSCAN_5_VGG_cluster_visualization.png" data-action="zoom" data-original="assets/img/Step2_DBSCAN_5_VGG_cluster_visualization.png"
@@ -279,47 +392,49 @@
         </div>
       </div>
       <!--/ Stage 1 -->
+  </div>
+</section>
 
+<!-- Rectlinear Parking Output. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5"> Rectlinear Parking Datasets DeepPIC Results</h2>
+      </div>
+    </div>
+    <div class="columns is-centered">
       <!-- Sim2Real -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 1 Visualizing sim-to-real gap in merged datasets.</h2>
+          <!-- <h2 class="title is-4">Stage 1 Visualizing sim-to-real gap in merged datasets.</h2> -->
           <p>
             Figure 9: 6 DBSCAN Clusters From Stage 1. C<sup>1</sup> i.e. stage 1 output from deepPIC applied to a mix of 3000 real, simulated and sim-to-real GAN translated parking images.
           </p>
           <div class="value-img">
-          <img id="img-default" src="assets/img/Sim2Real_Image.png" data-action="zoom" data-original="assets/img/Sim2Real_Image.png"
-            alt="journey_start_thumbnail" width="1000"/>
-        </div>
+            <img id="img-default" src="assets/img/Sim2Real_Image.png" data-action="zoom" data-original="assets/img/Sim2Real_Image.png"
+              alt="journey_start_thumbnail" width="1000"/>
+          </div>
         </div>
       </div>
   </div>
 </section>
-
+      
 <!-- Output. -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- 1 BDD100K. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Stage 2 BDD100 Clustering Output for C<sup>2</sup><sub>0</sub></h2>
-          <p>
-              Figure 11: Stage 2 Clustering Output. C<sup>2</sup><sub>0</sub>, i.e. the stage 2 clustering output from deepPIC applied to the BDD100K images assigned to C<sup>1</sup><sub>0</sub> in Fig. 3.
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/img/Step4_DBSCAN_LPIPS_just_visualization_0.png" data-action="zoom" data-original="assets/img/Step4_DBSCAN_LPIPS_just_visualization_0.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4"> Fisheye Parking Datasets DeepPIC Results</h2>
       </div>
-
+    </div>
+    <div class="columns is-centered">
       <!-- 2. Parking -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 1 clustering output from deepPIC applied to 2000 images from an internal parking.</h2>
+          <!-- <h2 class="title is-4">Stage 1 clustering output from deepPIC applied to 2000 images from an internal parking.</h2> -->
           <p>
-            Figure 12: 4 DBSCAN Clusters From Stage 1. C<sup>1</sup> (see Section A.3 for dataset details).
+            Figure 12: 4 DBSCAN Clusters From Stage 1 with 2000 images sampled from 641K. C<sup>1</sup> (see Section A.3 for dataset details).
           </p>
           <div class="value-img">
           <img id="img-default" src="assets/img/parking2k_stage1_cluster.png" data-action="zoom" data-original="assets/img/parking2k_stage1_cluster.png"
@@ -337,9 +452,9 @@
       <!-- 1. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Stage 2 Parking Clustering Output for C<sup>1</sup><sub>1</sub></h2>
+          <!-- <h2 class="title is-4">Stage 2 Parking Clustering Output for C<sup>1</sup><sub>1</sub></h2> -->
             <p>
-              Figure 13: Note how the sub-clusters labeled 0, 1, 2 and 3 have formed one neighbourhood because of images in these sub-clusters sharing similar features such as clear weather and no prominent ego-vehicle shadows. The sub-cluster labeled 4 comprises of images captured in cloudy weather conditions. The remaining sub-clusters labeled 5, 6, 7 and 8 have been separated from the rest, due to the strong ego-vehicle shadow cast on the ground
+              Figure 13: Stage 2 Clustering Output for C<sup>1</sup><sub>1</sub>. Note how the sub-clusters labeled 0, 1, 2 and 3 have formed one neighbourhood because of images in these sub-clusters sharing similar features such as clear weather and no prominent ego-vehicle shadows. The sub-cluster labeled 4 comprises of images captured in cloudy weather conditions. The remaining sub-clusters labeled 5, 6, 7 and 8 have been separated from the rest, due to the strong ego-vehicle shadow cast on the ground
             </p>
             <div class="value-img2">
               <img id="img-default" src="assets/img/parking2k_stage2_group1_cluster_a.png" data-action="zoom" data-original="assets/img/parking2k_stage2_group1_cluster_a.png"
@@ -348,7 +463,7 @@
         </div>
       </div>
       <!-- 1. -->
-      <div class="column">
+<!--       <div class="column">
         <div class="content">
           <h2 class="title is-4">Stage 1 Parking Clustering 1K Sample Output with KMeans</h2>
             <p>
@@ -359,7 +474,8 @@
                 alt="journey_start_thumbnail" width="1000"/>
             </div>
         </div>
-      </div>
+      </div> -->
+      <!-- 1. -->
 </section>
 
 <!-- Output. -->
@@ -367,7 +483,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <!-- 1. -->
-      <div class="column">
+<!--       <div class="column">
         <div class="content">
           <h2 class="title is-4">Stage 1 Parking Clustering 1K Sample Output with DBSCAN</h2>
             <p>
@@ -378,66 +494,27 @@
                 alt="journey_start_thumbnail" width="1000"/>
             </div>
         </div>
-      </div>
-      <!-- 1. -->
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 Parking Dataset of 2 DBSCAN Clusters With Label </h2>
-            <p>
-              Figure 22:.
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_vapa_pngs/dbscan.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/dbscan.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
+      </div> -->
       <!-- 1. -->
 </section>
 
+
+
+<!-- Parking Dataset without Deep Perceptual Feature Understanding -->
 <section class="section">
   <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-5"> Without Deep Perceptual Feature Understanding Fisheye Parking Datasets Stage 1 Results</h2>
+      </div>
+    </div>
     <div class="columns is-centered">
       <!-- 1. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 Parking Dataset of 2 KMeans Clusters With Label</h2>
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 Parking Dataset of tSNE + DBSCAN: 2 KMeans Clusters With Label</h2> -->
             <p>
-              Figure 23: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_vapa_pngs/kmeans.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/kmeans.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 Parking Dataset of Silhouette Score Elbow for KMeans Clustering</h2>
-            <p>
-              Figure 24:.
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_vapa_pngs/kmeans_silhouette.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/kmeans_silhouette.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 Parking Dataset of tSNE + DBSCAN: 2 KMeans Clusters With Label</h2>
-            <p>
-              Figure 25: .
+              Figure 28 tSNE + DBSCAN: 2 KMeans Clusters With Label.
             </p>
             <div class="value-img2">
               <img id="img-default" src="assets/rebuttal_vapa_pngs/tsne_dbscan.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/tsne_dbscan.png"
@@ -449,9 +526,9 @@
       <!-- 1. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 Parking Dataset of tSNE + KMeans: 2 KMeans Clusters With Label</h2>
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 Parking Dataset of tSNE + KMeans: 2 KMeans Clusters With Label</h2> -->
             <p>
-              Figure 26:.
+              Figure 29 tSNE + KMeans: 2 KMeans Clusters With Label.
             </p>
             <div class="value-img2">
               <img id="img-default" src="assets/rebuttal_vapa_pngs/tsne_kmeans.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/tsne_kmeans.png"
@@ -460,125 +537,47 @@
         </div>
       </div>
       <!-- 1. -->
+       <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 Parking Dataset of 2 DBSCAN Clusters With Label </h2> -->
+            <p>
+              Figure 30 2 DBSCAN Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_vapa_pngs/dbscan.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/dbscan.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. -->
+      <!-- 1. -->
+      <div class="column">
+        <div class="content">
+          <!-- <h2 class="title is-4">Without Deep Perceptual Feature Understanding: Stage 1 Parking Dataset of 2 KMeans Clusters With Label</h2> -->
+            <p>
+              Figure 31 2 KMeans Clusters With Label.
+            </p>
+            <div class="value-img2">
+              <img id="img-default" src="assets/rebuttal_vapa_pngs/kmeans.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/kmeans.png"
+                alt="journey_start_thumbnail" width="1000"/>
+            </div>
+        </div>
+      </div>
+      <!-- 1. --> 
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 Parking Dataset of tSNE + KMeans: Silhouette Score Elbow for KMeans Clustering</h2>
-            <p>
-              Figure 27: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_vapa_pngs/tsne_kmeans_silhouette.png" data-action="zoom" data-original="assets/rebuttal_vapa_pngs/tsne_kmeans_silhouette.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 BDD100K Dataset 2 DBSCAN Clusters With Label </h2>
-            <p>
-              Figure 28: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/dbscan.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/dbscan.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-</section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 BDD100K Dataset 2 KMeans Clusters With Label</h2>
-            <p>
-              Figure 29: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/kmeans.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/kmeans.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 BDD100K Dataset Silhouette Score Elbow for KMeans Clustering </h2>
-            <p>
-              Figure 30: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/kmeans_silhouette.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/kmeans_silhouette.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-</section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 BDD100K Dataset tSNE + DBSCAN: 2 DBSCAN Clusters With Label</h2>
-            <p>
-              Figure 31: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/tsne_dbscan.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/tsne_dbscan.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">Without Deep Perceptual Feature Extraction: Stage 1 BDD100K Dataset tSNE + KMeans: 2 KMeans Clusters With Label</h2>
-            <p>
-              Figure 32: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/tsne_kmeans.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/tsne_kmeans.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-</section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <!-- 1. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-4">tSNE + KMeans: Silhouette Score Elbow for KMeans Clustering</h2>
-            <p>
-              Figure 33: .
-            </p>
-            <div class="value-img2">
-              <img id="img-default" src="assets/rebuttal_bdd100k_pngs/tsne_kmeans_silhouette.png" data-action="zoom" data-original="assets/rebuttal_bdd100k_pngs/tsne_kmeans_silhouette.png"
-                alt="journey_start_thumbnail" width="1000"/>
-            </div>
-        </div>
-      </div>
-      <!-- 1. -->
-</section>
+     
+     
+</section> -->
+
+
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
