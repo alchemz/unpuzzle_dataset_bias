@@ -42,8 +42,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Unpuzzle Dataset Bias</h1>
-          <div class="is-size-5 publication-authors">
+          <h1 class="title is-1 publication-title">deepPIC: Deep Perceptual Image Clustering For Identifying Bias In Vision Datasets</h1>
+<!--           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=ZYvXHYwAAAAJ&hl=en">Nikita Jaipuria</a><sup>*</sup>,</span>
             <span class="author-block">
@@ -65,14 +65,14 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>*</sup>Ford Greenfield Labs, Palo Alto,</span>
             <span class="author-block"><sup>&dagger;</sup>Georgia Institute of Technology</span>
-          </div>
+          </div> -->
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
                 <a href="https://openreview.net/forum?id=ITPhz-cfLa"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
@@ -118,13 +118,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Dataset bias in manually collected datasets is a known problem in computer vision. Models trained on such datasets tend to underperform in the field. This effect is particularly amplified in automotive applications where data is hard to come by. Furthermore, in a safety-critical environment, these biases can lead to catastrophic errors jeopardizing the safety of users and their surroundings. 
-          </p>
-          <p>
-            Being able to unpuzzle the bias in a given dataset, and across datasets, is a powerful and essential tool towards building responsible AI. In this paper, we present <b>deepPIC: deep P</b>erceptual <b>I</b>mage <b>C</b>lustering, a novel data-centric hierarchical clustering pipeline that leverages deep perceptual features to visualize and understand bias in unstructured and unlabeled datasets. It does so by effectively highlighting nuanced subcategories of information embedded within the data (such as multiple but repetitive shadow types in a daytime dataset) that typically is hard and/or expensive to capture.
-          </p>
-          <p>
-            Through experiments on a variety of image datasets, both open-source and internal to Ford, we demonstrate the effectiveness of deepPIC in singling out errors in metadata provided by open-source datasets such as BDD100K; automatic nuanced metadata annotation; mining for edge cases; visualizing inherent bias both within and across multiple automated driving datasets; and capturing synthetic data limitations; thus highlighting the wide variety of applications this pipeline can be applied to.
+            Dataset bias in manually collected datasets is a known problem in computer vision. Models trained on such datasets tend to underperform in the field. In safety-critical applications such as autonomous driving, these biases can lead to catastrophic errors, jeopardizing the safety of users and their surroundings. Being able to unpuzzle the bias in a given dataset, and across datasets, is an essential tool for building responsible AI. In this paper, we present <b>deepPIC<\b>: <b>deep<\b> <b>P<\b>erceptual <b>I<\b>mage <b>C<\b>lustering, a novel hierarchical clustering pipeline that leverages deep perceptual features to visualize and understand bias in unstructured and unlabeled datasets. It does so by effectively highlighting nuanced subcategories of information embedded within the data (such as multiple but repetitive shadow types) that typically are hard and/or expensive to annotate. Through experiments on a variety of image datasets, both open-source and internal, we demonstrate the effectiveness of deepPIC in (i) singling out errors in metadata from open-source datasets such as BDD100K; (ii) automatic nuanced metadata annotation; (iii) mining for edge cases; (iv) visualizing inherent bias both within and across multiple datasets; and (v) capturing synthetic data limitations; thus highlighting the wide variety of applications this pipeline can be applied to.
           </p>
         </div>
       </div>
