@@ -201,8 +201,7 @@
 </section>
 
 <!-- BDD100K without Deep Perceptual Feature Understanding -->
-<!╌
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-max-desktop">
@@ -289,15 +288,14 @@
         </div>
       </div>
       <!-- 1. -->
-</section>
-╌>
+</section> -->
 
 <!-- Fisheye Parking Dataset (as described in A.3) -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-4"> Fisheye Parking Dataset (as described in A.3)</h2>
+        <h2 class="title is-4">Parking Dataset Clustering Results</h2>
       </div>
     </div>
     <div class="columns is-centered">
@@ -306,11 +304,11 @@
         <div class="content">
           <!-- <h2 class="title is-4">Stage 1 clustering output from deepPIC applied to 2000 images from an internal parking.</h2> -->
           <p>
-            Figure 12: Stage 1 deepPIC output, i.e. C<sup>1</sup>, for 2000 images sampled from the full parking dataset.
+            Figure 5 (in paper): Stage 1 deepPIC output, i.e. C<sup>1</sup>, for 2000 images sampled from the full parking dataset. deepPIC stage 1 output (C<sup>1</sup>) for 2000 images from an internal parking dataset. Note automatic segregation of indoor garage images (C<sup>1</sup><sub>0</sub>) from those captured in outdoor parking lots (C<sup>1</sup><sub>1</sub>, C<sup>1</sup><sub>2</sub> and C<sup>1</sup><sub>3</sub>).
           </p>
           <div class="value-img">
-          <img id="img-default" src="assets/img/parking2k_stage1_cluster.png" data-action="zoom" data-original="assets/img/parking2k_stage1_cluster.png"
-            alt="journey_start_thumbnail" width="1000"/>
+          <img id="img-default" src="assets/img/Step2_DBSCAN_4_VGG_cluster_visualization.png" data-action="zoom" data-original="assets/img/Step2_DBSCAN_4_VGG_cluster_visualization.png"
+            alt="parking_stage1" width="1000"/>
         </div>
       </div>
     </div>
@@ -320,21 +318,21 @@
 <!-- Stage 2. -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <!-- 1. -->
-      <div class="column">
+      <div class="column is-four-fifths">
         <div class="content">
           <!-- <h2 class="title is-4">Stage 1 Parking Clustering 1K Sample Output with KMeans</h2> -->
             <p>
-              Figure 32: Stage 2 deepPIC output for images assigned to C<sup>1</sup><sub>0</sub> in Fig. 12. The sub-cluster 3 groups images captures at day-time in indoor garage with no ceiling lights. The images grouped in sub-cluster 1 had been manually labeled as day-time to begin with, yet using DeepPIC, we discovered that they all had bright ceiling lights in them and were infact captured at night. 
+              Figure 6 (in paper): Stage 2 deepPIC output for images assigned to C<sup>1</sup><sub>1</sub> in Fig. 5. Sub-clusters 0, 1 and 2 on the left have overcast skies. In contrast, sub-clusters 3 and 4 on the right have sunny skies and a strong ego-vehicle shadow.
             </p>
             <div class="value-img2">
-              <img id="img-default" src="assets/img/parking2k_stage2_c1_0.png" data-action="zoom" data-original="assets/img/parking2k_stage2_c1_0.png"
-                alt="journey_start_thumbnail" width="1000"/>
+              <img id="img-default" src="assets/img/Step4_DBSCAN_1_LPIPS_cluster_visualization_parking.png" data-action="zoom" data-original="Step4_DBSCAN_1_LPIPS_cluster_visualization_parking.png"
+                alt="parking_stage2_1" width="1000"/>
             </div>
         </div>
       </div>
-
+<!-- 
       <!-- 1. -->
       <div class="column">
         <div class="content">
@@ -348,12 +346,12 @@
             </div>
         </div>
       </div>
-      <!-- 1. -->
+      <!-- 1. --> -->
 
 </section>
 
 <!-- Parking Dataset without Deep Perceptual Feature Understanding -->
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-max-desktop">
@@ -417,7 +415,7 @@
         </div>
       </div>
       <!-- 1. --> 
-</section>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
